@@ -2,19 +2,16 @@ package com.example.f1driversdictionary
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.f1driversdictionary.databinding.ActivityMainBinding
+import com.example.f1driversdictionary.databinding.ActivityDetailsBinding
 
-class MainActivity : AppCompatActivity() {
+class DetailsActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMainBinding
+    private lateinit var binding: ActivityDetailsBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityDetailsBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
-
-        //Data
-
     }
 }
